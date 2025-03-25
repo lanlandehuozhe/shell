@@ -82,3 +82,5 @@ main() {
     get_disk
     get_gpu
 }
+# 执行主函数并将输出保存到文件
+main | tee /tmp/server-$(date +%F_%H-%M-%S).txt
